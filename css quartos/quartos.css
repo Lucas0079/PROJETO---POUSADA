@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro' sans-serif;
+}
+
+
+/* TOPO */
+
+.texto-azul{
+    color: blue;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 85px;
+    padding: 20px;
+    
+    background-color: rgb(255, 255, 255);
+}
+
+.container-topo{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+
+.link:hover{
+    color: blue;
+}
+
+.logo-link{
+    font-size: 24px;
+    transition: .5s;
+}
+
+.logo-link:hover{
+    transform: scale(1.05);
+}
+
+
+.banner-parallax{
+    background-image: url("/assets/img-fundo.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.texto-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.texto-inicial p {
+    margin-top: 20px;
+}
+
+.quartos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.quartos div img{
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+}
+
+.quartos div img:hover{
+    transform: scale(1.03);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px #0000005a;
+}
+
+
+
+.bloco-lista{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    
+}
+
+.lista ul{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.lista ul li{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* RODAPE  */
+
+.rodape{
+    background-color: rgb(10, 117, 83);
+    padding: 10px 0px;
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container-dados{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(6, 81, 56);
+    padding: 20px 0px;
+    position: relative;
+}
+
+.container-dados  img{
+    width: 40px;
+    height: 40px;
+}
+
+.container-dados div{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.container-dados p{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px 5px;
+}
+
+.container-dados
+
+.container-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-rodape{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.texto-rodape span{
+    color: rgb(232, 148, 45);
+}
+
+.container-dados h1{
+    width: 300px;
+    color: white;
+}
+
+.container-dados a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    
+}
+
+
+/* Responsividade */
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1280px){
+    .quartos{
+        flex-wrap: wrap;
+    }
+
+    .container-dados{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .texto-rodape{
+        padding: 10px;
+        text-align: center;
+    }
+
+    
+
+    
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .container-topo{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .logo-link{
+        font-size: 20px;
+    }
+
+    .box-banner{
+        margin: 20px;
+    }
+
+    .quartos{
+        flex-wrap: wrap;
+    }
+
+    .texto-inicial{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   .container-dados{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .quartos img{
+     padding: 10px;
+   }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .container-topo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .logo-link{
+        font-size: 20px;
+    }
+
+    .box-banner{
+        margin: 20px;
+    }
+
+
+    .quartos{
+        flex-wrap: wrap;
+    }
+
+    
+    .texto-inicial{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+   .container-dados{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .quartos img{
+     padding: 10px;
+   }
+    
+}
